@@ -847,29 +847,6 @@ header .container .buttonBars {
     }
 }
 
-@media (max-width: 950px) {
-    header .container {
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    header .container>ul li a {
-        font-size: 13px;
-        letter-spacing: 0;
-        padding: 10px;
-    }
-
-    header .container>ul {
-        gap: 9px;
-    }
-
-    header .container {
-        padding: 15px 10px;
-    }
-}
-
 @media (max-width: 530px) {
     .home .container .left h1 {
         font-size: 41px;
