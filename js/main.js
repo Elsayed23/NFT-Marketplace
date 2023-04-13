@@ -1,14 +1,13 @@
-let toggleBars = document.querySelector(".fa-bars-staggered")
-let nav = document.querySelector(".navbar")
+let buttonSh = document.querySelector(".buttonBars");
+
+let show = document.querySelector(".navbar");
+
 let remove = document.querySelector(".fa-x")
 
-toggleBars.addEventListener("click", () => {
-    nav.style.transform = "translateX(0)";
-    nav.style.opacity = "1";
+buttonSh.addEventListener("click", () => {
+    show.classList.add("show-nav")
 })
 
 remove.addEventListener("click", () => {
-    nav.style.transform = "translateX(-100%)";
-    nav.style.opacity = "0";
-
+    show.classList.remove("show-nav")
 })
