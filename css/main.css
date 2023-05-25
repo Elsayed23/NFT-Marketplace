@@ -76,10 +76,17 @@ li {
 /* End Global Ruls */
 /* Start Header */
 header {
+    background: #f7f7f7;
     width: 100%;
+    position: absolute;
+}
+
+.fixedHeader {
     position: fixed;
     top: 25px;
     z-index: 99;
+    background-color: transparent;
+    animation: test .4s;
 }
 
 header .container {
@@ -87,9 +94,20 @@ header .container {
     justify-content: space-between;
     padding: 15px 30px;
     border-radius: 50px;
-    background: #f7f7f7;
     position: relative;
     align-items: center;
+    transition: .5s;
+}
+
+@keyframes test {
+    from {
+        top: -100%;
+    }
+}
+
+.fixedCon {
+    background: #f7f7f7;
+    padding: 10px 20px;
 }
 
 header .container img {
