@@ -834,6 +834,7 @@ header .container .buttonBars {
 
 @media (max-width: 991px) {
     header {
+        position: relative !important;
         top: 0 !important;
     }
 
